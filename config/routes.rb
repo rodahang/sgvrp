@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  # root 'application#hello'
+   	root 'dashboard#home'
+  	get 'team', to: 'dashboard#projects'
+  	get 'about', to: 'dashboard#about'
 
-
-   root 'dashboard#home'
-  get 'team', to: 'dashboard#projects'
-  get 'about', to: 'dashboard#about'
+  	get  'signup',  to: 'users#new'
 end
