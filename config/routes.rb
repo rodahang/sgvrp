@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'application#hello'
+
+  root 'dashboard#home'
+  get 'team', to: 'dashboard#projects'
+  get 'about', to: 'dashboard#about'
+  
 end

@@ -12,3 +12,13 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
+
+Rails.application.config.assets.precompile += %w( bootstrap.min.css )
+Rails.application.config.assets.precompile += %w( mdb.min.css )
+
+
+Rails.application.config.assets.precompile += %w( jquery-3.2.1.min.js )
+Rails.application.config.assets.precompile += %w( popper.min.js )
+Rails.application.config.assets.precompile += %w( bootstrap.min.js )
+Rails.application.config.assets.precompile += %w( mdb.min.js )
+Rails.application.config.assets.precompile += %w( dashboard_layout.css )
