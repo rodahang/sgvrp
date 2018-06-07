@@ -10,9 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_06_122202) do
+ActiveRecord::Schema.define(version: 2018_06_07_022759) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "dashboards", force: :cascade do |t|
+    t.string "home"
+    t.string "about"
+    t.string "team"
+  end
 
 end
