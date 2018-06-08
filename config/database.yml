@@ -82,5 +82,5 @@ production:
   <<: *default
   database: sgvrp_production
   username: sgvrp
-  password: wendel
-  #password: <%= ENV['SGVRP_DATABASE_PASSWORD'] %>
+  # password: wendel
+  password: <%= ENV['SGVRP_DATABASE_PASSWORD'] %>
