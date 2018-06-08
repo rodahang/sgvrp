@@ -1,0 +1,50 @@
+$color_1: #EF7C00;
+$color_2: lightgray;
+$font_family_1: Lato,Helvetica,Arial,sans-serif;
+$background_color_1: red;
+$background_color_2: yellow;
+$background_color_3: green;
+$background_color_4: #413E4A;
+
+html {
+	height: 100%;
+	font-family: $font_family_1;
+	font-size: .875em;
+}
+body {
+	height: 100%;
+	font-family: $font_family_1;
+	font-size: .875em;
+}
+.navbar-up {
+	height: 50px;
+}
+.navbar-down {
+	height: 32px;
+}
+.vrp-red {
+	background-color: $background_color_1;
+}
+.vrp-yello {
+	background-color: $background_color_2;
+}
+.vrp-green {
+	background-color: $background_color_3;
+}
+.vrp-center {
+	margin: auto;
+}
+.nus-orange {
+	color: $color_1;
+}
+.c-lightgray {
+	color: $color_2;
+}
+.nav-palette-dark {
+	background-color: $background_color_4;
+}
+.esri-ui-manual-container {
+	>.esri-component {
+		display: none;
+	}
+}

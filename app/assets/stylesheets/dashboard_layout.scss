@@ -1,0 +1,104 @@
+$color_1: #ffffff;
+$background_color_1: #3f51b5;
+$background_color_2: rgba(126, 123, 215, 0.2);
+
+@-webkit-keyframes "chartjs-render-animation" {
+	from {
+		opacity: 0.99;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes "chartjs-render-animation" {
+	from {
+		opacity: 0.99;
+	}
+	to {
+		opacity: 1;
+	}
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+header {
+	height: 100%;
+}
+.view {
+	height: 100%;
+}
+.top-nav-collapse {
+	background-color: $background_color_1 !important;
+}
+.navbar {
+	&:not(.top-nav-collapse) {
+		background: transparent !important;
+	}
+}
+.rgba-gradient {
+	background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+	background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+}
+.card {
+	background-color: $background_color_2;
+}
+.md-form {
+	label {
+		color: $color_1;
+	}
+}
+h6 {
+	line-height: 1.7;
+}
+.view-demo-button {
+	visibility: visible;
+	animation-name: fadeInLeft;
+	animation-delay: 0.3s;
+}
+.chartjs-render-monitor {
+	-webkit-animation: chartjs-render-animation 0.001s;
+	animation: chartjs-render-animation 0.001s;
+}
+@media (max-width: 740px) {
+	html {
+		height: 1000px;
+	}
+	body {
+		height: 1000px;
+	}
+	header {
+		height: 1000px;
+	}
+	.view {
+		height: 1000px;
+	}
+}
+@media (min-width: 800px) and (max-width: 850px) {
+	html {
+		height: 650px;
+	}
+	body {
+		height: 650px;
+	}
+	header {
+		height: 650px;
+	}
+	.view {
+		height: 650px;
+	}
+	.navbar {
+		&:not(.top-nav-collapse) {
+			background: #3f51b5 !important;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.navbar {
+		&:not(.top-nav-collapse) {
+			background: #3f51b5 !important;
+		}
+	}
+}

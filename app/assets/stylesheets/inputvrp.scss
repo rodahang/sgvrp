@@ -1,0 +1,272 @@
+$color_1: rgba(255,255,255,.8);
+$color_2: rgba(0,0,0,.8);
+$color_3: rgba(0,0,0,.5);
+$background_color_1: transparent;
+$background_color_2: rgba(142,165,253,0.5);
+$background_color_3: rgba(142,165,253,0.2);
+$background_color_4: rgba(142,165,253,0.1);
+
+/*
+.vrp-input-action button:hover{ background-color: #F0B49E !important; }
+.vrp-input-action button:selected{ background-color: #F0B49E !important; }
+.vrp-input-action button:active{ background-color: #F0B49E !important; }
+.vrp-input-action button:focus{ background-color: #F0B49E !important; }
+.vrp-input-action button:disabled{ background-color: #F0B49E !important; }*/
+/*address*/
+/*delivery quantities*/
+/*Time*/
+/*Service Time*/
+/*actions*/
+/*address*/
+/*delivery quantities*/
+/*actions*/
+/*Name*/
+/*Capacity*/
+/*Time*/
+/*Total Distance*/
+/*Order Count*/
+/*Total Travel Time*/
+/*actions*/
+/*BUTTONS*/
+main {
+	padding: 70px 15px 0px 15px;
+	height: calc(100% - 50px);
+}
+.vrp-input-row {
+	height: 100%;
+}
+.vrp-input {
+	height: 100%;
+	min-height: 400px;
+}
+.input-vrps {
+	padding: 0;
+	height: 100%;
+	.tab-content {
+		height: calc(100% - 100px);
+		overflow: scroll;
+		div {
+			height: 100%;
+			width: 100%;
+		}
+	}
+	.nav-item {
+		padding: 0;
+	}
+	.nav-link {
+		padding: .8rem 1rem;
+		border-radius: 3px 3px 0px 0px;
+	}
+	.nav-link.active {
+		border: 0;
+		box-shadow: none;
+		&:hover {
+			box-shadow: none;
+		}
+	}
+}
+.upload-div-vrp {
+	padding: 4rem 2rem 3rem;
+}
+.header-truckinput-panel {
+	width: 100%;
+	height: 50px;
+	padding: 15px 15px;
+	color: $color_1 !important;
+	div {
+		&:nth-child(1) {
+			float: left;
+		}
+		&:nth-child(2) {
+			float: right;
+		}
+	}
+	button {
+		background-color: $background_color_1;
+		border: none;
+		color: $color_1 !important;
+	}
+}
+.vrp-input-action {
+	position: absolute;
+	height: 50px;
+	width: calc(100% - 29px);
+	bottom: 0;
+	padding-right: 15px;
+	padding-top: 2px;
+	button {
+		padding: 10px 20px;
+		text-transform: none;
+		font-weight: 700;
+		color: $color_2 !important;
+	}
+	.vrp-right {
+		float: right;
+	}
+	.vrp-left {
+		float: left;
+	}
+}
+.main-mapview {
+	height: 100%;
+	width: 100%;
+	padding: 2px;
+}
+#vrp-mapview {
+	height: 100%;
+	width: 100%;
+}
+.inputs-table {
+	display: none;
+	.header-orders {
+		table {
+			tbody {
+				tr {
+					td {
+						font-size: .8rem;
+						font-weight: 600;
+						color: $color_2;
+					}
+				}
+			}
+		}
+	}
+	.items-orders {
+		table {
+			tbody {
+				tr {
+					td {
+						padding-right: 10px;
+						font-size: .8rem;
+						font-weight: 600;
+						color: $color_3;
+					}
+				}
+			}
+		}
+	}
+	table {
+		tbody {
+			tr {
+				&:nth-child(even) {
+					background-color: $background_color_3;
+				}
+				&:nth-child(odd) {
+					background-color: $background_color_4;
+				}
+			}
+		}
+	}
+}
+.header-orders {
+	height: 38px !important;
+	table {
+		width: 100%;
+		height: 100%;
+		&:nth-child(1) {
+			background-color: $background_color_2;
+		}
+	}
+}
+#orderInputPanel {
+	.inputs-table {
+		table {
+			tbody {
+				tr {
+					td {
+						&:nth-child(1) {
+							padding-left: 20px !important;
+							width: 40%;
+						}
+						&:nth-child(2) {
+							width: 15%;
+						}
+						&:nth-child(3) {
+							width: 25%;
+						}
+						&:nth-child(4) {
+							width: 13%;
+						}
+						&:nth-child(5) {
+							width: 7%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.items-orders {
+	height: calc(100% - 38px) !important;
+	width: 100%;
+	overflow: auto;
+	table {
+		width: 100%;
+	}
+	tr {
+		height: 45px;
+		width: 100%;
+	}
+}
+#depotInputPanel {
+	.inputs-table {
+		table {
+			tbody {
+				tr {
+					td {
+						&:nth-child(1) {
+							padding-left: 20px !important;
+							width: 60%;
+						}
+						&:nth-child(2) {
+							width: 30%;
+						}
+						&:nth-child(3) {
+							width: 10%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#truckInputPanel {
+	.inputs-table {
+		table {
+			tbody {
+				tr {
+					td {
+						&:nth-child(1) {
+							padding-left: 15px !important;
+							width: 15%;
+						}
+						&:nth-child(2) {
+							width: 15%;
+						}
+						&:nth-child(3) {
+							width: 20%;
+						}
+						&:nth-child(4) {
+							width: 15%;
+						}
+						&:nth-child(5) {
+							width: 12%;
+						}
+						&:nth-child(6) {
+							width: 13%;
+						}
+						&:nth-child(7) {
+							width: 10%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.solveVRPBtn {
+	display: none;
+}
+.addOrdersBtn {
+	display: none;
+}
